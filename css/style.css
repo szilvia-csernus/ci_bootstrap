@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.alert-container {}
+
+.callout-container {
+    background-color: rgb(30, 30, 30);
+    background: url(../images/whiskey.jpg) no-repeat bottom right / cover fixed;
+
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quotes-container {}
+
+.features-container {}
+
+/* Jumbotron  */
+.jumbotron {
+    background-color:transparent;
+}
+.jumbotron > h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.jumbotron .lead {
+    margin: 25px 0;
+    color: #a7a7a7;
+}
+
+.jumbotron .text-muted {
+    font-size: 1.1em;
+    margin-top: 1rem;
+    color: white;
+}
