@@ -9,7 +9,7 @@ body {
 
 .callout-container {
     background-color: rgb(30, 30, 30);
-    background: url(../images/whiskey.jpg) no-repeat bottom right / cover fixed;
+    background: url(../images/whiskey-new.jpg) no-repeat bottom right / cover fixed;
 
     height: 100vh;
     overflow: hidden;
@@ -17,6 +17,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
 }
 
 .quotes-container {}
@@ -30,16 +40,56 @@ body {
 .jumbotron > h1 {
     color: white;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .jumbotron .lead {
-    margin: 25px 0;
+    margin: 100px 0 25px;
     color: #a7a7a7;
 }
 
 .jumbotron .text-muted {
     font-size: 1.1em;
     margin-top: 1rem;
+    color: white;
+}
+
+/* Block dividers  */
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: none;
+    
+}
+
+.block-divider--red {
+    background-color: #f04b0b;
+}
+
+.block-divider--short {
+
+}
+
+/* Buttons */
+
+.btn--cta {
+    font-weight: bold;
+    border-radius: 23px;
+    width: 160px;
+}
+
+.btn--red {
+    color: white;
+    background-color: transparent;
+    border: 2px solid #f04b0b;
+}
+
+.btn--red:hover,
+.btn--red:active,
+.btn--red:focus,
+.btn--red:active:focus {
+    background-color: #f04b0b;
+    border: 2px solid #f04b0b;
     color: white;
 }
