@@ -5,11 +5,55 @@ body {
 
 }
 
-.alert-container {}
+.alert-container .col-12{
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    border: none;
+    padding: 5px 15px;
+    background-color: #ffd15a;
+}
+
+/* Navbar  */
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(40,40,40, 0.25);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+
+/* Callout */
 
 .callout-container {
     background-color: rgb(30, 30, 30);
-    background: url(../images/whiskey-new.jpg) no-repeat bottom right / cover fixed;
+    background: url(../images/whiskey-new.jpg) no-repeat top left / cover fixed;
 
     height: 100vh;
     overflow: hidden;
@@ -29,11 +73,45 @@ body {
     background-color: rgba(0,0,0,0.2);
 }
 
-.quotes-container {}
+/* Quotes */
 
-.features-container {}
+.quotes-container {
+    margin-bottom: 5rem;
+}
+
+.quotes h2 {
+    text-align: center;
+}
+
+/* Features  */
+
+.feature h3, .feature p {
+    margin: 40px 0;
+}
+
+.features h2 {
+    text-align: center;
+}
+
+.features-container {
+    background-color: #f6603b;
+    padding-bottom: 3rem;
+}
+
+i {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.badge {
+    background-color: #ffd15a;
+    color:rgb(30, 30, 30);
+}
+
 
 /* Jumbotron  */
+
 .jumbotron {
     background-color:transparent;
 }
@@ -45,7 +123,7 @@ body {
 
 .jumbotron .lead {
     margin: 100px 0 25px;
-    color: #a7a7a7;
+    color: #e7e7e7;
 }
 
 .jumbotron .text-muted {
@@ -57,19 +135,20 @@ body {
 /* Block dividers  */
 
 .block-divider {
-    width: 75px;
-    height: 5px;
+    width: 200px;
+    height: 3px;
     border: none;
-    
 }
 
 .block-divider--red {
     background-color: #f04b0b;
 }
 
-.block-divider--short {
-
+.block-divider--white {
+    background-color: white;
 }
+
+
 
 /* Buttons */
 
@@ -90,6 +169,19 @@ body {
 .btn--red:focus,
 .btn--red:active:focus {
     background-color: #f04b0b;
-    border: 2px solid #f04b0b;
     color: white;
+}
+
+.btn--white {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.btn--white:hover,
+.btn--white:active,
+.btn--white:focus,
+.btn--white:active:focus {
+    background-color: white;
+    color:#f04b0b;
 }
